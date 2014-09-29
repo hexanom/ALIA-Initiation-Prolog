@@ -1,5 +1,5 @@
-element(X,[X|R],R).
-element(X,[D|L],R) :- element(X,L,F),R=[D|F].
+element(Elt,[Elt|Rest],Rest).
+element(Elt,[Deb|Fin],Rest) :- element(Elt,Fin,RecurRest),Rest=[Deb|RecurRest].
 
-extraire(L,[E]) :- element(E, L, _).
-extraire(L,[E|F]) :- element(E,L,R),extraire(R,F).
+extraire(List,[Elt]) :- element(Elt, List, _).
+extraire(List,[Elt|Fin]) :- element(Elt,List,Rest),extraire(Rest,Fin).
