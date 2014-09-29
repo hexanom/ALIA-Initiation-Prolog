@@ -1,0 +1,54 @@
+----------------------------
+.Projet Prolog 4-IF-ALIA-PR.
+----------------------------
+
+Vous devez proposer un sujet de projet qui pose un problème dont la résolution
+s'effectuera en Prolog de manière non triviale. On mettra l'accent sur les jeux
+à un ou deux joueurs, sur des problèmes de programmation sous contraintes, 
+ou encore des problèmes de génération de labyrinthe que l'on parcourt.
+
+Dans tous les cas, on doit pouvoir évaluer la solution du problème choisi selon
+des critères quantitatifs que vous définissez. L'évaluation qualitative sera basée
+sur les notions comprises et utilisées à bon escient dans votre programme Prolog,
+et votre aptitude à les restituer dans votre rapport et pendant votre présentation.
+
+Le projet se réalise en hexanome, il est donc attendu que plusieurs solutions
+soit proposées et comparées entre elles.
+
+Prenons par exemple le cas du jeu de Tic-tac-toe (morpion) : vous décrivez plusieurs
+manières de le résoudre : une solution "aléatoire", une solution qui explore l'arbre 
+complet de l'espace de recherche, et deux solutions basées sur des heuristiques.
+
+Le code Prolog écrit doit être modulaire : sa structuration doit permettre de pouvoir intégrer
+toute nouvelle solution de manière immédiate selon des signatures de prédicats bien définies.
+Le coeur du programme gère les structure de données (par exemple comment représenter un plan,
+l'état du jeu, ...). Il appelle alors diverses solutions, chacune écrite dans un module séparé.
+Un module de tests unitaires et un module d'évaluation/profilage des solutions sont également attendus.
+Ce dernier peut par exemple "faire jouer" 100 parties entre chaque couple de méthodes de résolution.
+On mettrait en avant alors le pourcentage de victoires d'une solution, le temps d'exécution 
+de chaque "coup" (somme, moyen, etc.), etc. Cela vous permettra de mettre en exergue vos
+résultats et de les expliquer dans votre rapport de projet qui accompagnera la soutenance. 
+
+Chaque hexanome désigne un chef de projet. Il n'est pas attendu une gestion de projet excessive
+(pas de livrable spécifique), car la priorité reste, pour ce projet court, la pratique du Prolog
+par tous les membres avec l'utilisation et l'écriture de prédicats non triviaux. Par exemple, 
+on peut répartir, de manière chevauchante ou non les différentes tâches suivantes : gestion de projet,
+architecture et structure de données, approche qualité pour les tests unitaires et la gestion des
+exceptions, développement de solutions, évaluation des solutions.
+
+
+Quelques idées : 
+----------------
+Puissance 4, bataille navale, Tic Tac Toe, le compte est bon,
+des chiffres et des lettres, le problème du voyageur de commerce,
+trouver un plus court chemin, génération de labyrinthe, pac-man,
+et tout autre idée que les enseignants valideront en seconde séance.
+
+Dates importantes : 
+-------------------
+Semaine 40 : Séance d'exercices
+Semaine 41 : Choix du sujet et des rôles des membres à valider en début de séance (dédiée au projet)
+Semaine 42 : Séance complète dédiée au projet
+Semaine 43 : Soutenance en groupe avec démonstration (20 minutes + 10 minutes questions, en salle TP)
+             Le code sera également rendu et pris en compte pour la notation finale.
+
